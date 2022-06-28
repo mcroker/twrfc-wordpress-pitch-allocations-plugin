@@ -1,0 +1,144 @@
+.twrfc-pitch-allocations-editor {
+    border: 5px dashed #000;
+}
+.wp-block-twrfc-pitch-allocations {
+    max-width: var(--responsive--aligndefault-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.allocationsmap {
+    position: relative;
+    width: 100%; /* for IE 6 */
+
+    img {
+        width: 100%; /* for IE 6 */
+    }
+
+    .pitchlabel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 1.1em;
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+
+    /* ========== Box layout ======= */
+
+    .pitch1a {
+        top: 70%;
+        left: 14%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch1b {
+        top: 69%;
+        left: 29%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch2a {
+        top: 49%;
+        left: 45%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch2b {
+        top: 65%;
+        left: 47%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch3a {
+        top: 38%;
+        left: 65%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch3b {
+        top: 53%;
+        left: 68%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch4a {
+        top: 3%;
+        left: 9%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .pitch4b {
+        top: 17%;
+        left: 9%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .training {
+        top: 34%;
+        left: 8%;
+        width: 12%;
+        height: 12%;
+    }
+
+    .upper1 {
+        top: 49%;
+        left: 7%;
+        width: 17%;
+        height: 8%;
+    }
+
+    .bank {
+        top: 34%;
+        left: 35%;
+        width: 18%;
+        height: 8%;
+    }
+
+    .o2pitch {
+        top: 48%;
+        left: 28%;
+        width: 11%;
+        height: 15%;
+    }
+
+    .lower1 {
+        top: 40%;
+        left: 55%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .lower2 {
+        top: 66%;
+        left: 59%;
+        width: 10%;
+        height: 10%;
+    }
+
+    .moxons1 {
+        top: 12%;
+        left: 78%;
+        width: 12%;
+        height: 10%;
+    }
+
+    .moxons2 {
+        top: 27%;
+        left: 81%;
+        width: 12%;
+        height: 10%;
+    }
+}

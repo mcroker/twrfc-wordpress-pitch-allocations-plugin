@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "twrfc/pitch-allocations",
+  "version": "0.1.0",
+  "title": "TWRFC: Pitch Allocations Map",
+  "category": "twrfc",
+  "icon": "universal-access-alt",
+  "attributes": {
+    "pitch1a": {
+      "source": "text",
+      "selector": "div.pitch1a span",
+      "type": "string"
+    },
+    "pitch1b": {
+      "source": "text",
+      "selector": "div.pitch1b span",
+      "type": "string"
+    },
+    "pitch2a": {
+      "source": "text",
+      "selector": "div.pitch2a span",
+      "type": "string"
+    },
+    "pitch2b": {
+      "source": "text",
+      "selector": "div.pitch2b span",
+      "type": "string"
+    },
+    "pitch3a": {
+      "source": "text",
+      "selector": "div.pitch3a span",
+      "type": "string"
+    },
+    "pitch3b": {
+      "source": "text",
+      "selector": "div.pitch3b span",
+      "type": "string"
+    },
+    "pitch4a": {
+      "source": "text",
+      "selector": "div.pitch4a span",
+      "type": "string"
+    },
+    "pitch4b": {
+      "source": "text",
+      "selector": "div.pitch4b span",
+      "type": "string"
+    },
+    "training": {
+      "source": "text",
+      "selector": "div.training span",
+      "type": "string"
+    },
+    "upper1": {
+      "source": "text",
+      "selector": "div.upper1 span",
+      "type": "string"
+    },
+    "bank": {
+      "source": "text",
+      "selector": "div.bank span",
+      "type": "string"
+    },
+    "o2pitch": {
+      "source": "text",
+      "selector": "div.o2pitch span",
+      "type": "string"
+    },
+    "lower1": {
+      "source": "text",
+      "selector": "div.lower1 span",
+      "type": "string"
+    },
+    "lower2": {
+      "source": "text",
+      "selector": "div.lower2 span",
+      "type": "string"
+    },
+    "moxons1": {
+      "source": "text",
+      "selector": "div.moxons1 span",
+      "type": "string"
+    },
+    "moxons2": {
+      "source": "text",
+      "selector": "div.moxons2 span",
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "twrfc",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

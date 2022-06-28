@@ -1,0 +1,36 @@
+{
+	"name": "twrfc-wordpress",
+	"version": "1.1.0",
+	"private": true,
+	"description": "TWRFC wordpress plugin",
+	"author": "Martin Croker",
+	"license": "none",
+	"homepage": "https://github.com/mcroker/twrfc-wordpress-plugin",
+	"repository": "https://github.com/mcroker/twrfc-wordpress-plugin",
+	"devDependencies": {
+		"@wordpress/env": "^4.6.0",
+		"@wordpress/scripts": "^23.0.0",
+		"copy-webpack-plugin": "^10.2.4",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "npm:wp-prettier@2.2.1-beta-1"
+	},
+	"files": [ "index.php", "build", "public" ],
+	"prettier": "@wordpress/prettier-config",
+	"scripts": {
+		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=src --output-path=build",
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=src --output-path=build",
+		"lint:js": "wp-scripts lint-js",
+		"lint:style": "wp-scripts lint-style",
+		"format:js": "wp-scripts format",
+		"lint:js:fix": "npm run lint:js -- --fix",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"test": "wp-scripts test-unit-js",
+		"env:start": "wp-env start",
+		"env:start:debug": "wp-env start --xdebug",
+		"env:stop": "wp-env stop",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "^6.7.0"
+	}
+}
