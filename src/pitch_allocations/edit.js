@@ -11,7 +11,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/richtext/
  */
 import { useBlockProps } from '@wordpress/block-editor';
-import { Card, CardBody, CardHeader, TextareaControl } from '@wordpress/components';
+import { Card, CardBody, CardHeader, TextareaControl, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -39,7 +39,7 @@ export default function Edit({ attributes: {
 }, setAttributes }) {
 	return (
 		<Card
-			{...useBlockProps({ class: 'twrfc-pitch-allocation-editor' })}
+			{...useBlockProps({ className: 'twrfc-pitch-allocations-editor' })}
 		>
 			<CardHeader>
 				TWRFC: Pitch Allocation
@@ -124,6 +124,88 @@ export default function Edit({ attributes: {
 					/>
 					<TextareaControl
 						class="moxons2 pitchlabel"
+						value={moxons2}
+						onChange={(value) => setAttributes({ moxons2: value })}
+					/>
+				</div>
+				<div class="allocationstable">
+					<TextControl
+						label="Pitch 1a"
+						value={pitch1a}
+						onChange={(value) => setAttributes({ pitch1a: value })}
+					/>
+					<TextControl
+						label="Pitch 1b"
+						value={pitch1b}
+						onChange={(value) => setAttributes({ pitch1b: value })}
+					/>
+					<TextControl
+						label="Pitch 2a"
+						value={pitch2a}
+						onChange={(value) => setAttributes({ pitch2a: value })}
+					/>
+					<TextControl
+						label="Pitch 2b"
+						value={pitch2b}
+						onChange={(value) => setAttributes({ pitch2b: value })}
+					/>
+					<TextControl
+						label="Pitch 3a"
+						value={pitch3a}
+						onChange={(value) => setAttributes({ pitch3a: value })}
+					/>
+					<TextControl
+						label="Pitch 3b"
+						value={pitch3b}
+						onChange={(value) => setAttributes({ pitch3b: value })}
+					/>
+					<TextControl
+						label="Pitch 4a"
+						value={pitch4a}
+						onChange={(value) => setAttributes({ pitch4a: value })}
+					/>
+					<TextControl
+						label="Pitch 4b"
+						value={pitch4b}
+						onChange={(value) => setAttributes({ pitch4b: value })}
+					/>
+					<TextControl
+						label="Training"
+						value={training}
+						onChange={(value) => setAttributes({ training: value })}
+					/>
+					<TextControl
+						label="Upper 1"
+						value={upper1}
+						onChange={(value) => setAttributes({ upper1: value })}
+					/>
+					<TextControl
+						label="Bank"
+						value={bank}
+						onChange={(value) => setAttributes({ bank: value })}
+					/>
+					<TextControl
+						label="O2 Pitch"
+						value={o2pitch}
+						onChange={(value) => setAttributes({ o2pitch: value })}
+					/>
+					<TextControl
+						label="Lower 1"
+						value={lower1}
+						onChange={(value) => setAttributes({ lower1: value })}
+					/>
+					<TextControl
+						label="Lower 2"
+						value={lower2}
+						onChange={(value) => setAttributes({ lower2: value })}
+					/>
+					<TextControl
+						label="Moxons 1"
+						value={moxons1}
+						onChange={(value) => setAttributes({ moxons1: value })}
+					/>
+					<TextControl
+						label="Moxons 2"
 						value={moxons2}
 						onChange={(value) => setAttributes({ moxons2: value })}
 					/>

@@ -1,35 +1,46 @@
 .twrfc-pitch-allocations-editor {
-    border: 5px dashed #000;
+    @media screen and (max-width: 600px) {
+        .allocationsmap {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 601px) {
+        .allocationstable {
+            display: none;
+        }
+        .allocationsmap {
+            max-width: 800px; /* for IE 6 */
+        }
+    }
 }
+
 .wp-block-twrfc-pitch-allocations {
     max-width: var(--responsive--aligndefault-width);
     margin-left: auto;
     margin-right: auto;
-}
-
-.allocationsmap {
-    position: relative;
-    width: 100%; /* for IE 6 */
-
-    img {
+    .allocationsmap {
+        position: relative;
         width: 100%; /* for IE 6 */
-    }
+        img {
+            width: 100%; /* for IE 6 */
+        }
+        .pitchlabel {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    .pitchlabel {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        span {
-            font-size: 1.1em;
-            vertical-align: middle;
-            text-align: center;
+            span {
+                font-size: 1.1em;
+                vertical-align: middle;
+                text-align: center;
+            }
         }
     }
+}
 
-    /* ========== Box layout ======= */
-
+/* ========== Box layout ======= */
+.allocationsmap {
     .pitch1a {
         top: 70%;
         left: 14%;
