@@ -34,4 +34,4 @@ function twrfc_enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'twrfc_enqueue_scripts');
 
-require_once plugin_dir_path(__FILE__) . 'pitch_allocations/index.php';
+require_once plugin_dir_path(__FILE__) . 'build/pitch_allocations/index.php';

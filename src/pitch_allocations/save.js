@@ -34,7 +34,7 @@ const Save = (props) => {
 					<span>{pitch3a}</span>
 				</div>
 				<div class="pitchlabel pitch3b">
-					<span>{pitch3a}</span>
+					<span>{pitch3b}</span>
 				</div>
 				<div class="pitchlabel pitch4a">
 					<span>{pitch4a}</span>
