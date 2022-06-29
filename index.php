@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: TWRFC 
+ * Plugin Name: TWRFC Pitch Allocations
  * Plugin URI: https://github.com/
  * Description: This is a plugin specific to Tun Wells RFC website
  * Version: 1.1.0
