@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: TWRFC Pitch Allocations
- * Plugin URI: https://github.com/
+ * Plugin URI: https://github.com/mcroker/twrfc-wordpress-pitch-allocations-plugin
  * Description: This is a plugin specific to Tun Wells RFC website
  * Version: 1.1.0
  * Author: Martin Croker

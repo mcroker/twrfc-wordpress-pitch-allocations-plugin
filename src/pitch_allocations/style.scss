@@ -1,4 +1,7 @@
 .twrfc-pitch-allocations-editor {
+    max-width: var(--responsive--aligndefault-width);
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: 600px) {
         .allocationsmap {
             display: none;
